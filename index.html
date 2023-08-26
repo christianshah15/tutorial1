@@ -4,8 +4,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <style>
-        #map {height: 400 px; width: 700px;}
-        html, body {height: 100%; margin: 0; padding:0; }
+        #map { height: 400 px; width: 700px; }
+        html, body { height: 100%; margin: 0; padding: 0; }
     </style>
 
     <script>
@@ -16,7 +16,7 @@
 
       
       function initialize() {
-          var Map = L.map('map', {
+          var map = L.map('map', {
             center: [43.7034, -72.2887 ],
             zoom: 15,
             layers: OpenStreetMap_HOT
@@ -25,7 +25,7 @@
   </head>
     <body onload ="initialize()">
       <h1>Embedding a Web Map using Leaflet</h1>
-      <div id ="Map"></div>
+      <div id ="map"></div>
     </body>
     
 </html>
